@@ -6,16 +6,17 @@
   <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-  <div class="container">
-    <div class="card">
-      <div id="question">エアコンコンサルを始めますか？</div>
-      <button id="startBtn" class="btn btn-start" onclick="start()">スタート</button>
-      <button id="yesBtn" class="btn btn-yes" onclick="answer('yes')" style="display:none;">はい</button>
-      <button id="noBtn" class="btn btn-no" onclick="answer('no')" style="display:none;">いいえ</button>
-      <button id="restartBtn" class="btn btn-restart" onclick="restart()" style="display:none;">もう一度</button>
+<div class="container">
+  <div class="messages" id="messages"></div>
+  <div class="card">
+    <div id="question" class="question-bubble"></div>
+    <div id="result" class="result" style="display: none;"></div>
+    <div id="buttons">
+      <button class="btn btn-start" onclick="startDiagnosis()">診断を始める</button>
     </div>
   </div>
-
+</div>
+  
   <script>
     const questions = [
       { key: 'inpei', question: '隠蔽配管？' },
@@ -206,6 +207,55 @@
 
     let answers = {};
     let currentIndex = 0;
+
+function displayQuestion() {
+  const questionDiv = document.getElementById("question");
+  const messagesDiv = document.getElementById("messages");
+
+  // 今の質問を履歴に追加
+  const questionText = document.createElement("div");
+  questionText.className = "bubble question-bubble";
+  questionText.textContent = questions[currentQuestion];
+  messagesDiv.appendChild(questionText);
+
+  questionDiv.textContent = ""; // 現在の質問欄は空にしておく
+  displayAnswerButtons();
+}
+
+function handleAnswer(answer) {
+  answers.push(answer);
+
+  const messagesDiv = document.getElementById("messages");
+
+  // 選んだ回答を吹き出しとして表示
+  const answerText = document.createElement("div");
+  answerText.className = "bubble answer-bubble";
+  answerText.textContent = answer === "yes" ? "はい" : "いいえ";
+  messagesDiv.appendChild(answerText);
+
+  currentQuestion++;
+  if (currentQuestion < questions.length) {
+    displayQuestion();
+  } else {
+    displayResult();
+  }
+}
+
+function displayResult() {
+  const messagesDiv = document.getElementById("messages");
+  const result = calculateResult();
+
+  const resultText = document.createElement("div");
+  resultText.className = "bubble result-bubble";
+  resultText.textContent = "あなたの結果: " + result;
+  messagesDiv.appendChild(resultText);
+
+  // 下の欄にも一応表示
+  document.getElementById("result").textContent = result;
+  document.getElementById("result").style.display = "block";
+  document.getElementById("buttons").innerHTML =
+    '<button class="btn btn-restart" onclick="restartDiagnosis()">もう一度診断する</button>';
+}
 
     function start() {
       currentIndex = 0;
