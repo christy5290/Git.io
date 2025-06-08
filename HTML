@@ -29,181 +29,12 @@
       { key: 'nagamochi', question: '10年以上使いたい？'},
       { key: 'onsei', question: '音声機能は欲しい？'},
       { key: 'kabi', question: 'カビを抑えたい？'},
-      { key: 'nowimd', question: 'エアコンの風が嫌い？'},
+      { key: 'nowind', question: 'エアコンの風が嫌い？'},
       { key: 'smart', question: 'コンパクトな見た目がいい？'}
     ];
 
     const products = [
-
-      {//ダイキン
-        name: 'ダイキン Rシリーズ',
-        conditions: {inpei:'no',airClean: 'yes',eco:'yes',autoClean:'no',smell:'yes',rakuClean:'no',kasitsu:'yes',windmove:'no',nagamochi:'yes',onsei:'yes',kabi:'yes',nowind:'yes',smart:'no'}
-      },
-      
-      {
-        name: 'ダイキン Aシリーズ',
-        conditions: {inpei:'no',airClean: 'yes',eco: 'yes',autoClean: 'no',smell:'yes',rakuClean:'no',kasitsu:'no',windmove:'no',nagamochi:'yes',onsei:'yes',kabi:'yes',nowind:'yes',smart:'no'}
-      },
-      
-      {
-        name: 'ダイキン Fシリーズ',
-        conditions: {inpei:'no',airClean: 'yes',eco: 'yes',autoClean: 'no',smell:'yes',rakuClean:'no',kasitsu:'no',windmove:'no',nagamochi:'yes',onsei:'no',kabi:'yes',nowind:'yes',smart:'yes'}
-      },
-      
-       {
-        name: 'ダイキン Cシリーズ',
-        conditions: {inpei:'yes',airClean: 'yes',eco: 'yes',autoClean: 'no',smell:'yes',rakuClean:'no',kasitsu:'no',windmove:'no',nagamochi:'no',onsei:'no',kabi:'no',nowind:'no',smart:'yes'}
-      },
-      
-     {
-        name: 'ダイキン Cシリーズ',
-        conditions: {inpei:'no',airClean: 'yes',eco: 'yes',autoClean: 'no',smell:'yes',rakuClean:'no',kasitsu:'no',windmove:'no',nagamochi:'no',onsei:'no',kabi:'no',nowind:'no',smart:'yes'}
-      },
-      
-      {
-        name: 'ダイキン Eシリーズ',
-        conditions: {inpei: 'yes', airClean: 'yes',eco: 'no',autoClean: 'yes',smell:'no' ,rakuClean:'no',kasitsu:'no',windmove:'no',nagamochi:'no',onsei:'no',kabi:'no',nowind:'no',smart:'yes'}
-      },
-      
-       {
-        name: 'ダイキン Eシリーズ',
-        conditions: {inpei:'no',airClean: 'yes',eco: 'no',autoClean: 'yes',smell:'no',rakuClean:'no',kasitsu:'no',windmove:'no',nagamochi:'no',onsei:'no',kabi:'no',nowind:'no',smart:'yes'}
-      },
-      
-      {//三菱
-        name: '三菱 GEシリーズ',
-        conditions: {inpei: 'no', airClean: 'no',eco: 'no' ,autoClean: 'yes',smell:'no',rakuClean:'yes',kasitsu:'no',windmove:'no',nagamochi:'no',onsei:'no',kabi:'yes',nowind:'no',smart:'yes'}
-      },
-      
-       {
-        name: '三菱 Sシリーズ',
-        conditions: {inpei: 'no', airClean: 'no',eco: 'no',autoClean: 'yes',smell:'yes' ,rakuClean:'yes',kasitsu:'no',windmove:'no',nagamochi:'no',onsei:'no',kabi:'yes',nowind:'no',smart:'yes'}
-      },
-      
-       {
-        name: '三菱 Xシリーズ',
-        conditions: {inpei: 'no', airClean: 'yes',eco: 'yes',autoClean: 'no',smell:'yes' ,rakuClean:'yes',kasitsu:'no',windmove:'yes',nagamochi:'yes',onsei:'no',kabi:'no',nowind:'no',smart:'no'}
-       },
-      
-       {
-        name: '三菱 Zシリーズ',
-        conditions: {inpei: 'no', airClean: 'yes',eco: 'yes',autoClean: 'no',smell:'yes' ,rakuClean:'yes',kasitsu:'no',windmove:'yes',nagamochi:'yes',onsei:'no',kabi:'yes',nowind:'yes',smart:'no'}
-      },
-      
-       {
-        name: '三菱 FZシリーズ',
-        conditions: {inpei: 'no', airClean: 'yes',eco: 'yes',autoClean: 'no',smell:'yes' ,rakuClean:'yes',kasitsu:'no',windmove:'yes',nagamochi:'yes',onsei:'no',kabi:'yes',nowind:'yes',smart:'no'}
-      },
-      
-      {//富士通
-        name: '富士通 Cシリーズ',
-        conditions: {inpei: 'no', airClean: 'no',eco: 'no',autoClean: 'yes',smell:'no' ,rakuClean:'no',kasitsu:'no',windmove:'no',nagamochi:'no',onsei:'no',kabi:'no',nowind:'yes',smart:'yes'}
-      },
-    
-       {
-        name: '富士通 Dシリーズ',
-        conditions: {inpei: 'no', airClean: 'no',eco: 'no',autoClean: 'no',smell:'yes' ,rakuClean:'no',kasitsu:'no',windmove:'no',nagamochi:'no',onsei:'yes',kabi:'yes',nowind:'no',smart:'yes'}
-      },
-      
-       {
-        name: '富士通 Wシリーズ',
-        conditions: {inpei: 'yes', airClean: 'no',eco: 'yes',autoClean: 'no',smell:'yes' ,rakuClean:'no',kasitsu:'no',windmove:'no',nagamochi:'yes',onsei:'yes',kabi:'yes',nowind:'no',smart:'no'}
-      },
-      
-      {
-        name: '富士通 Wシリーズ',
-        conditions: {inpei: 'no', airClean: 'no',eco: 'yes',autoClean: 'no',smell:'yes' ,rakuClean:'no',kasitsu:'no',windmove:'no',nagamochi:'yes',onsei:'yes',kabi:'yes',nowind:'no',smart:'no'}
-      },
-      
-        {
-        name: '富士通 Zシリーズ',
-        conditions: {inpei: 'no', airClean: 'yes',eco: 'yes',autoClean: 'no',smell:'yes' ,rakuClean:'no',kasitsu:'no',windmove:'no',nagamochi:'yes',onsei:'yes',kabi:'yes',nowind:'no',smart:'no'}
-      },
-
-       {
-        name: '富士通 Lシリーズ',
-        conditions: {inpei: 'yes', airClean: 'no',eco: 'yes',autoClean: 'yes',smell:'yes',rakuClean:'no',kasitsu:'no',windmove:'no',nagamochi:'no',onsei:'yes',kabi:'yes',nowind:'no',smart:'yes'}
-      },
-
-       {
-        name: '富士通 Lシリーズ',
-        conditions: {inpei: 'no', airClean: 'no',eco: 'yes',autoClean: 'yes',smell:'yes',rakuClean:'no',kasitsu:'no',windmove:'no',nagamochi:'no',onsei:'yes',kabi:'yes',nowind:'no',smart:'no'}
-      },
-      
-        {
-        name: '富士通 Xシリーズ',
-        conditions: {inpei: 'no', airClean: 'yes',eco: 'yes',autoClean: 'no',smell:'yes' ,rakuClean:'no',kasitsu:'no',windmove:'no',nagamochi:'yes',onsei:'yes',kabi:'yes',nowind:'no',smart:'no'}
-      },
-
-       {//日立
-        name: '日立 Dシリーズ',
-        conditions: {inpei: 'no', airClean: 'no',eco: 'no',autoClean: 'yes',smell:'yes' ,rakuClean:'no',kasitsu:'no',windmove:'no',nagamochi:'no',onsei:'no',kabi:'yes',nowind:'no',smart:'yes'}
-      },
-      
-       {
-        name: '日立 Gシリーズ',
-        conditions: {inpei: 'no', airClean: 'no',eco: 'no',autoClean: 'no',smell:'yes' ,rakuClean:'no',kasitsu:'no',windmove:'no',nagamochi:'no',onsei:'no',kabi:'yes',nowind:'no',smart:'yes'}
-      },
-
-        {
-        name: '日立 WNシリーズ',
-        conditions: {inpei: 'no', airClean: 'no',eco: 'no',autoClean: 'no',smell:'yes' ,rakuClean:'no',kasitsu:'no',windmove:'no',nagamochi:'no',onsei:'no',kabi:'yes',nowind:'no',smart:'yes'}
-      },
-        {
-        name: '日立 WNシリーズ',
-        conditions: {inpei: 'yes', airClean: 'no',eco: 'no',autoClean: 'no',smell:'yes' ,rakuClean:'no',kasitsu:'no',windmove:'no',nagamochi:'no',onsei:'no',kabi:'yes',nowind:'no',smart:'yes'}
-      },
-
-        {
-        name: '日立 Xシリーズ',
-        conditions: {inpei: 'no', airClean: 'yes',eco: 'yes',autoClean: 'no',smell:'yes' ,rakuClean:'no',kasitsu:'no',windmove:'no',nagamochi:'yes',onsei:'no',kabi:'yes',nowind:'no',smart:'no'}
-      },
-      
-      {//パナソニック
-        name: 'Panasonic Jシリーズ',
-        conditions: {inpei: 'no', airClean: 'yes',eco: 'no',autoClean: 'yes',smell:'no',rakuClean:'no',kasitsu:'no',windmove:'no',nagamochi:'no',onsei:'no',kabi:'no',nowind:'no',smart:'yes'}
-      },
-
-      {
-        name: 'Panasonic EXシリーズ',
-        conditions: {inpei: 'no', airClean: 'yes',eco: 'no',autoClean: 'no',smell:'yes',rakuClean:'yes',kasitsu:'no',windmove:'no',nagamochi:'no',onsei:'no',kabi:'yes',nowind:'no',smart:'yes'}
-      },
-
-      {
-        name: 'Panasonic Xシリーズ',
-        conditions: {inpei: 'no', airClean: 'yes',eco: 'yes',autoClean: 'no',smell:'yes',rakuClean:'yes',kasitsu:'no',windmove:'no',nagamochi:'no',onsei:'no',kabi:'yes',nowind:'no',smart:'no'}
-      },
-      
-      {
-        name: '東芝 Xシリーズ',
-        conditions: {inpei: 'no', airClean: 'yes',eco: 'no',autoClean: 'yes',smell:'no',rakuClean:'no',kasitsu:'no',windmove:'no',nagamochi:'no',onsei:'no',kabi:'yes',nowind:'yes',smart:'yes'}
-      },
-
-      {
-        name: '東芝 DXシリーズ',
-        conditions: {inpei: 'no', airClean: 'yes',eco: 'no',autoClean: 'no',smell:'no',rakuClean:'yes',kasitsu:'no',windmove:'no',nagamochi:'no',onsei:'no',kabi:'yes',nowind:'yes',smart:'no'}
-      },
-
-      {
-        name: '東芝 DRシリーズ',
-        conditions: {inpei: 'no', airClean: 'yes',eco: 'yes',autoClean: 'no',smell:'yes',rakuClean:'yes',kasitsu:'no',windmove:'no',nagamochi:'yes',onsei:'no',kabi:'yes',nowind:'yes',smart:'no'}
-      },
-
-         {//SHARP
-        name: 'SHARP DGシリーズ',
-        conditions: {inpei: 'no', airClean:'yes',eco: 'no',autoClean: 'yes',smell:'no',rakuClean:'no',kasitsu:'no',windmove:'no',nagamochi:'no',onsei:'no',kabi:'yes',nowind:'no',smart:'yes'}
-      },
-      
-       {
-        name: 'SHARP Eシリーズ',
-        conditions: {inpei: 'no', airClean:'yes',eco: 'no',autoClean: 'yes',smell:'yes',rakuClean:'no',kasitsu:'no',windmove:'no',nagamochi:'no',onsei:'no',kabi:'yes',nowind:'no',smart:'yes'}
-      },
-      
-       {
-        name: 'SHARP Vシリーズ',
-        conditions: {inpei: 'no', airClean:'yes',eco: 'yes',autoClean: 'no',smell:'yes',rakuClean:'no',kasitsu:'no',windmove:'no',nagamochi:'yes',onsei:'no',kabi:'yes',nowind:'no',smart:'yes'}
-      },
-     
+      // 
     ];
 
     let answers = {};
@@ -232,42 +63,38 @@
     }
 
     function showResult() {
-      let currentProducts = [...products]; // products配列のシャローコピーを作成
+      let currentProducts = [...products];
 
-      // 「隠蔽配管」が「はい」の場合の特別なフィルターを適用
       if (answers['inpei'] === 'yes') {
         const allowedNamesForInpeiYes = ['日立 WNシリーズ', 'ダイキン Cシリーズ', 'ダイキン Eシリーズ', '富士通 Wシリーズ', '富士通 Lシリーズ'];
         currentProducts = currentProducts.filter(product =>
-          product.conditions.inpei === 'yes' && // 隠蔽配管対応の製品のみ
-          allowedNamesForInpeiYes.includes(product.name) // かつ、指定された名前の製品のみ
+          product.conditions.inpei === 'yes' &&
+          allowedNamesForInpeiYes.includes(product.name)
         );
       }
 
-      // その他の条件に基づいたスコアリング
       const scored = currentProducts.map(product => {
         let matchCount = 0;
         let relevantConditionsCount = 0;
 
         for (const [key, value] of Object.entries(product.conditions)) {
-            // ユーザーの回答がある質問のみを関連条件としてカウントする
-            if (answers.hasOwnProperty(key)) {
-                relevantConditionsCount++;
-                if (answers[key] === value) {
-                    matchCount++;
-                }
+          if (answers.hasOwnProperty(key)) {
+            relevantConditionsCount++;
+            if (answers[key] === value) {
+              matchCount++;
             }
+          }
         }
 
         const score = relevantConditionsCount > 0 ? matchCount / relevantConditionsCount : 0;
         return { ...product, score };
       });
 
-      // スコア順にソート（降順）
       const sorted = scored.sort((a, b) => b.score - a.score);
 
       const resultDiv = document.getElementById('question');
       if (sorted.length > 0 && sorted[0].score > 0) {
-        const topProducts = sorted.slice(0, 3); // 上位3つ表示
+        const topProducts = sorted.slice(0, 3);
         resultDiv.innerHTML = `<div class="result"><strong>おすすめ製品（マッチ度順）:</strong><br>${topProducts.map(p => `${p.name}（${Math.round(p.score * 100)}%）`).join('<br>')}</div>`;
       } else {
         resultDiv.innerHTML = '<div class="result">ご希望条件に近い製品が見つかりませんでした。</div>';
@@ -278,13 +105,12 @@
       document.getElementById('restartBtn').style.display = 'inline-block';
     }
 
-
     function restart() {
-      document.getElementById('question').innerText = "エアコンコンサルを始めますか？";
       document.getElementById('startBtn').style.display = 'inline-block';
       document.getElementById('yesBtn').style.display = 'none';
       document.getElementById('noBtn').style.display = 'none';
       document.getElementById('restartBtn').style.display = 'none';
+      document.getElementById('question').innerText = 'エアコンコンサルを始めますか？';
     }
   </script>
 </body>
